@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+#effectBox {
+    width: 130px;
+    height: 65px;
+    margin: 15px auto;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+svg rect {
+    fill: none;
+    stroke: white;
+    stroke-width: 1;
+}
+
+#effectBox:hover svg rect {
+    stroke: #02E4E7;
+}
+
+svg rect {
+    stroke-dasharray: 400, 0;
+    transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    -webkit-transition: all 0.8s ease-in-out;
+}
+
+#effectBox:hover svg rect {
+    stroke-width: 3;
+    stroke-dasharray: 35, 245;
+    stroke-dashoffset: 38;
+    transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    -webkit-transition: all 0.8s ease-in-out;
+}
+
+#calcola {
+    margin-left: -33.5px;
+    margin-top: -12px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaccia Smartphone - LGR</title>
+    <meta name="description" content="Interfaccia che tiene conto di ricarica, credito residuo e delle chiamate">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-dark text-light">
+    <div class="container border rounded">
+        <form class="my-3">
+            <h1 class="text-center">RESOCONTO COSTO TELEFONATE</h1>
+            <div class="mb-3">
+                <label for="exampleInputNomeUser1" class="form-label" required>Nome utente</label>
+                <input type="text" id="nomeUtente" class="form-control" id="exampleInputNomeUser1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputCredito" class="form-label" required>Credito di partenza sul telefono (in &euro;)</label>
+                <input type="number" id="credito" class="form-control" id="exampleInputCredito">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputNumeroChiamate" class="form-label" required>Numero di telefonate</label>
+                <input type="number" id="numeroTelefonate" class="form-control" id="exampleInputNumeroChiamate">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputDurataMedia" class="form-label" required>Durata media delle chiamate (in minuti)</label>
+                <input type="number" id="durataMedia" class="form-control" id="exampleInputDurataMedia">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputDurataMedia" class="form-label" required>Costo chiamata al minuto (in &euro;)</label>
+                <input type="number" id="costoMinuto" class="form-control" id="exampleInputDurataMedia">
+            </div>
+            <div id="effectBox">
+                <p id="calcola" class="position-absolute start-50 top-50">CALCOLA</p>
+                <svg width="130" height="65" viewBox="0 0 130 65" xmlns="http://www.w3.org/2000svg">
+                    <rect width="130" height="65" x="0" y="0" fill="none"/>
+                </svg>
+            </div>
+        </form>
+    </div>
+    <hr class="mx-5">
+    <div id="zonaStampa" class="container"></div>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
